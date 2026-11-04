@@ -2,7 +2,7 @@
 
 ## Concept
 
-Minimal Technical Editorial Portfolio. 이름 → 전문 영역 → 검증 가능한 프로젝트 순서로 읽히는 단일 열 구성입니다. 큰 통계 카드, 배지 모음, 애니메이션을 사용하지 않습니다.
+Minimal Technical Editorial Portfolio. 짧은 이름 중심 Hero, 한 문장 소개, 대표 작업 3개, 핵심 기술만 남긴 단일 열 구성입니다. 프로필은 빠른 탐색에 집중하고, 역할·구조·검증·한계는 기존 사례 문서에서 확인합니다.
 
 ## Color & Typography
 
@@ -18,25 +18,23 @@ Minimal Technical Editorial Portfolio. 이름 → 전문 영역 → 검증 가�
 
 ## Image Standards
 
-Hero viewBox는 720 × 440입니다. 390px 화면의 README 가용 폭에서도 이름과 핵심 메시지를 읽도록 큰 글자와 두 줄 문장을 사용합니다. SVG는 테마별 별도 파일, 로컬 경로, title/desc를 제공합니다. 스크립트·외부 리소스를 포함하지 않습니다. 테두리는 장식용이며 정보 전달을 맡기지 않습니다.
+Hero viewBox는 720 × 180입니다. 기존 대비 높이를 약 59% 줄였습니다. 54px 이름, 24px 분야 요약과 작은 데이터 흐름 모티브만 사용합니다. SVG는 테마별 별도 파일, 로컬 경로, title/desc를 제공합니다. 스크립트·외부 리소스를 포함하지 않습니다. 테두리는 장식용이며 정보 전달을 맡기지 않습니다.
 
 실제 화면은 출처와 촬영 조건을 확인한 뒤 추가합니다. 앱 디자인 시안은 동작 화면이나 운영 성과로 소개하지 않습니다. 이번 프로필에는 꾸며낸 UI 이미지를 추가하지 않았습니다.
 
 ## Section Responsibilities
 
-- Introduction: 이름·분야·문제 해결 방식. Hero의 정보를 실제 텍스트로도 제공합니다.
-- Areas of Expertise: 키워드마다 수행 가능한 작업을 한 줄로 설명합니다.
-- Selected Projects: 문제·기여·구현 근거·현재 한계·기술·사례 링크를 제공합니다.
-- Engineering Approach: 공개 구현에 연결되는 6단계 작업 방식을 간단한 텍스트로 표시합니다.
-- Technical Skills: 사용 근거를 확인한 기술만 적습니다. 경험 깊이 등급을 뜻하지 않습니다.
-- Experience & Recognition: 교육·기업연계를 정식 재직과 구분합니다. 확인되지 않은 수상은 넣지 않습니다.
+- Introduction: 이름·분야를 Hero에서 보여주고 실제 텍스트 한 문장으로 하는 일을 설명합니다.
+- Selected work: 프로젝트당 제목, 한 문장, 사례 링크. 제목은 저장소로 연결합니다. Supervisor의 Closed Beta 상태는 요약에 유지합니다.
+- Stack: 공개 코드에서 확인한 핵심 기술만 두 줄로 정리합니다.
+- 상세 역량·역할·구현 근거·제한사항·추가 확인 항목: 프로젝트 문서와 EVIDENCE.md에서 유지합니다. 미확인 프로젝트는 프로필 첫 화면에 노출하지 않습니다.
 
 ## Add a Project
 
 1. 공개 저장소와 기준 커밋을 확인합니다.
 2. `docs/projects/`에 Overview, Problem, My Role, System Architecture, Implementation, Verification, Results, Lessons Learned를 작성합니다.
 3. 역할은 커밋·작업 기록과 연결하고, 기능은 실제 실행 진입점에서 확인합니다.
-4. README에는 핵심 요약만 넣습니다. 통계는 재현 명령과 환경을 함께 기록합니다.
+4. README는 프로젝트당 한 문장과 사례 링크만 넣습니다. 세부 역할·기술·통계는 사례 문서에 적고 근거를 연결합니다.
 5. 상대 링크, 테마별 Hero, 390px·1440px 화면을 다시 확인합니다.
 
 ## Maintenance
