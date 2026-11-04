@@ -57,11 +57,12 @@
 
 | 프로필 표시 | 확인 방법 |
 | --- | --- |
-| Voruvi 5단계 | wheel SHA-256 일치 확인 후 `registry/verify.py`의 `static`, `isolation`, `permission`, `capability`, `capability_proof`를 코드에서 확인 |
+| Voruvi 5 checks | wheel SHA-256 일치 확인 후 `registry/verify.py`의 `static`, `isolation`, `permission`, `capability`, `capability_proof`를 코드에서 확인 |
 | SoloPilot 0 / 14 | [품질 평가 기록](https://github.com/hyeongdongE/mzapp/blob/ebacc3f89784251e31f6c27876b6dd708da4fd5b/docs/it-intelligence/quality-evaluation.md)의 기록 데이터 E2E 수치 인용. 이번에 다시 실행하지 않음 |
-| Orchestrator 사람 승인 | `OrchestrationRunner`의 승인 생성과 Discord 요청, 승인 후 종료 경계를 코드에서 확인 |
-| Peakrew 25개 통과 | Python 3.12 격리 환경에서 `crawler/tests` 직접 실행, 25 passed. API 키와 실시간 호출 없음 |
+| Orchestrator human gate | `OrchestrationRunner`의 승인 생성과 Discord 요청, 승인 후 종료 경계를 코드에서 확인 |
+| Peakrew 25 passed | Python 3.12 격리 환경에서 `crawler/tests` 직접 실행, 25 passed. API 키와 실시간 호출 없음 |
 | Peakrew 공공 데이터 8종 | `crawler/opportunity_crawler/adapters`의 어댑터 8개. 같은 기관의 API가 포함되어 있어 기관 수가 아님 |
 
+- 히어로의 로그는 작동 흐름 예시이며 실제 실행 기록이 아닙니다.
 - 사용 기술은 각 저장소의 빌드 파일, `package.json`, Compose 파일, 워크플로에서 확인한 항목만 적었습니다.
 - 비공개 저장소의 이름과 내용은 프로필에 쓰지 않았습니다.
