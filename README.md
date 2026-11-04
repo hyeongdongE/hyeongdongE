@@ -6,7 +6,7 @@
 
 # Lee Hyeongdong
 
-이형동 · **AI Transformation / AI Agent Systems / Backend Engineering**  
+이형동 · **AI Transformation / AI Agent Systems / Backend Engineering**<br>
 *From operational problems to verifiable AI workflows.*
 
 업무의 문제를 분석하고, AI와 소프트웨어로 자동화 시스템을 구현하는 개발자입니다. Agent 작업 분배와 권한 제어, 비정형 데이터의 구조화, 백엔드·외부 API 연동을 다루며, 실행 결과를 검증하고 실패 원인을 추적하는 흐름을 설계합니다.

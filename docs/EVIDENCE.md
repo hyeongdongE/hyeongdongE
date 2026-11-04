@@ -29,5 +29,5 @@
 - Hero 2개 XML 파싱 통과. 스크립트·외부 리소스 없음. 배경 대비 주·보조·강조 텍스트 모두 4.5:1 이상입니다.
 - Chromium 로컬 미리보기: GitHub Markdown API HTML + 공개 github-markdown-css를 사용했습니다. 실제 GitHub 페이지와 완전히 동일한 레이아웃을 보증하지는 않습니다.
 - 390px·1440px × dark·light 네 조합의 전체 스크린샷을 직접 확인했습니다. 가로 넘침 없음, 이미지 로드·테마별 Hero 전환 정상. 모바일 제목에서 한글 이름이 어색하게 줄바꿈되어 제목과 소개 행으로 분리했습니다.
-- 실제 GitHub 적용 후 표시 조건과 렌더링을 추가 확인합니다.
+- 원격 저장소 생성은 GitHub의 `Resource not accessible by integration (createRepository)` 오류로 차단되었습니다. 로컬 이름·README 조건은 충족하지만 실제 프로필 표시와 GitHub 페이지의 테마별 시각 검증은 완료하지 못했습니다.
 - 타 프로젝트의 소스코드는 수정하지 않았습니다. 프레임워크·빌드 의존성을 프로필 저장소에 추가하지 않았습니다.

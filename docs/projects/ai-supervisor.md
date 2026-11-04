@@ -39,7 +39,7 @@ flowchart TD
 
 ## Verification
 
-검토한 파일: `aisupervisor-0.1.0b1-py3-none-any.whl`  
+검토한 파일: `aisupervisor-0.1.0b1-py3-none-any.whl`<br>
 SHA-256: `08f157e4799f3aa2971fcf7a593d1fe652e91bd3a5e40935082bfa6573adaffc`
 
 재현: 공개 Release의 wheel 다운로드 → ZIP 도구로 압축 해제 → 위 모듈 확인. 코드가 존재한다는 검증이며 실제 Agent 실행·성공률·권한 격리의 완전성을 보증하지 않습니다. Claude 계정이나 사용량이 필요한 실행은 수행하지 않았습니다.
