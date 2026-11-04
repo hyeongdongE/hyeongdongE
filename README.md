@@ -33,3 +33,7 @@ Codex와 Claude Code를 한 팀으로 실행하는 Windows 앱
 **Frontend** &nbsp; `TypeScript` `React` `React Native` `Expo`
 
 **Infra** &nbsp; `Docker` `GitHub Actions` `Nginx` `Caddy` `Cloudflare Tunnel`
+
+## Contributions
+
+<img src="assets/contributions.svg" width="100%" alt="GitHub 기여 그래프">
