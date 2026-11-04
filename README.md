@@ -13,6 +13,9 @@ AI가 낸 결과는 그대로 믿지 않고, 테스트와 코드로 확인하는
 **[Voruvi](https://www.voruvi.com)** &nbsp; `Python` `Codex` `Claude Code`<br>
 개발 요청을 AI 에이전트 팀에 맡기고 결과까지 검사하는 Windows 앱
 
+**삼성전자 기업연계 프로젝트**<br>
+AI 기반 회로 검증 자동화 구현
+
 **Agent Harness** &nbsp; `Python` `Claude Code` `SQLite`<br>
 AI 에이전트의 권한, 승인, 검증 단계를 코드로 통제하는 실행 환경
 
