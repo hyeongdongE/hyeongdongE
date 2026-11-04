@@ -20,7 +20,15 @@ git remote add origin https://github.com/hyeongdongE/hyeongdongE.git
 git push -u origin main
 ```
 
-다운로드한 묶음을 다른 위치에서 푼 경우 `cd` 경로만 조정합니다. 기존 원격이 설정되어 있다면 `git remote -v`로 확인하고 중복 추가하지 않습니다. 원격에 기존 커밋이 생겼다면 강제 push하지 않고 별도 브랜치·PR로 통합합니다.
+다운로드한 ZIP은 Git 이력을 제외한 파일 스냅샷입니다. 다른 위치에서 푼 경우 해당 폴더에서 먼저 실행합니다.
+
+```bash
+git init -b main
+git add README.md assets docs
+git commit -m "Build evidence-based AX profile"
+```
+
+이후 위 배포 명령의 `cd` 경로를 조정합니다. 기존 원격이 설정되어 있다면 `git remote -v`로 확인하고 중복 추가하지 않습니다. 원격에 기존 커밋이 생겼다면 강제 push하지 않고 별도 브랜치·PR로 통합합니다.
 
 ## 반영 후 확인
 
