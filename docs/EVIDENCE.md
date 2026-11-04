@@ -29,5 +29,14 @@
 - Hero 2개 XML 파싱 통과. 스크립트·외부 리소스 없음. 배경 대비 주·보조·강조 텍스트 모두 4.5:1 이상입니다.
 - Chromium 로컬 미리보기: GitHub Markdown API HTML + 공개 github-markdown-css를 사용했습니다. 실제 GitHub 페이지와 완전히 동일한 레이아웃을 보증하지는 않습니다.
 - 390px·1440px × dark·light 네 조합의 전체 스크린샷을 직접 확인했습니다. 가로 넘침 없음, 이미지 로드·테마별 Hero 전환 정상. 모바일 제목에서 한글 이름이 어색하게 줄바꿈되어 제목과 소개 행으로 분리했습니다.
-- 원격 저장소 생성은 GitHub의 `Resource not accessible by integration (createRepository)` 오류로 차단되었습니다. 로컬 이름·README 조건은 충족하지만 실제 프로필 표시와 GitHub 페이지의 테마별 시각 검증은 완료하지 못했습니다.
+- 최초 저장소 생성은 `createRepository` 권한 오류로 차단되었으나, 사용자가 빈 Public 저장소를 생성한 뒤 2026-11-04 `main` push에 성공했습니다. API에서 Public·기본 브랜치 `main`·루트 README 및 assets/docs 존재를 확인했습니다.
 - 타 프로젝트의 소스코드는 수정하지 않았습니다. 프레임워크·빌드 의존성을 프로필 저장소에 추가하지 않았습니다.
+
+## Live GitHub Profile Check
+
+2026-11-04 공개 반영 후 확인.
+
+- Chromium으로 실제 `https://github.com/hyeongdongE`를 390px·1440px × light·dark 네 조합으로 열었습니다. 네 응답 모두 HTTP 200입니다.
+- 프로필 README가 표시되고, 두 테마의 Hero가 각 로컬 자산 URL에서 정상 로드되는 것을 확인했습니다.
+- 네 조합 모두 가로 넘침이 없었으며, 전체 스크린샷을 직접 확인했습니다.
+- 대표 사례 문서 3개는 실제 GitHub에서 HTTP 200을 반환했고, Mermaid 아키텍처의 렌더링과 화면을 확인했습니다. Supervisor는 초기 로딩 이후 노드 텍스트가 나타날 때까지 기다려 재확인했습니다.
