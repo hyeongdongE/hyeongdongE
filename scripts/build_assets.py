@@ -122,7 +122,7 @@ def hero():
     y, step = 240, 32
     for i, (who, what) in enumerate(LOG):
         last = i == len(LOG) - 1
-        left = "#FFF" if last else "#737373"
+        left = "#FFF" if last else "#808080"
         right = "#FFF" if last else "#A3A3A3"
         parts.append(
             f'<g class="s" style="--w:{.5 + i * .5}s">'
