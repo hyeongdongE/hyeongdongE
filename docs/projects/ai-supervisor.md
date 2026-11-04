@@ -1,6 +1,6 @@
-# AI Supervisor / Evidence-driven Agent Systems
+# Voruvi (구 AI Supervisor) / Evidence-driven Agent Systems
 
-[← Profile](../../README.md) · [Repository](https://github.com/hyeongdongE/ai-supervisor) · [Public Beta Release](https://github.com/hyeongdongE/ai-supervisor/releases/tag/v0.1.0b1)
+[← Profile](../../README.md) · [Repository](https://github.com/hyeongdongE/ai-supervisor) · [Public Beta Release](https://github.com/hyeongdongE/ai-supervisor/releases/tag/v0.1.0b1) · [Voruvi](https://www.voruvi.com)
 
 ## Overview
 
@@ -33,7 +33,7 @@ flowchart TD
 공개 Git 소스 트리에는 README만 있지만, 공개 wheel에는 읽을 수 있는 Python 모듈이 포함됩니다. 배포본을 설치·실행하지 않고 압축을 풀어 다음을 정적으로 확인했습니다.
 
 - `supervisor/permission.py`: Agent 요청 권한과 작업에 필요한 권한의 교집합을 계산합니다.
-- `registry/verify.py`: 임시 Git 저장소에서 capability를 확인하는 실행 경로가 있습니다.
+- `registry/verify.py`: 임시 Git 저장소에서 `static`, `isolation`, `permission`, `capability`, `capability_proof` 다섯 항목을 확인합니다.
 - `supervisor/artifacts.py`: 산출물 필수 필드, `stands_on`, 요구사항 `covers`, 지적의 `against`를 정의합니다.
 - `supervisor/pipeline.py`: 테스트 명령 실행과 결과 판정, 지적에 따른 되감기 경로가 있습니다.
 
@@ -54,4 +54,4 @@ README는 자동 되감기를 실행당 2회로 설명하지만, wheel의 `pipel
 
 설계에서 읽히는 트레이드오프: 팀 오케스트레이션은 검토 단계를 늘리지만 시간과 비용도 늘릴 수 있습니다. 작업 규모에 따른 팀 선택과 산출물 검증은 따로 평가해야 합니다.
 
-Voruvi와 이 배포본의 관계는 공개 근거가 없어 동일 제품·후속 버전으로 표기하지 않습니다.
+Voruvi는 AI Supervisor의 새 이름입니다(사용자 확인). Voruvi 웹사이트 기준으로 개발 중이며 다운로드와 가입은 아직 없습니다. 이 문서의 코드 근거는 공개 배포본 AI Supervisor `0.1.0b1` 기준이고, 현재 Voruvi 앱의 코드는 검토하지 않았습니다.

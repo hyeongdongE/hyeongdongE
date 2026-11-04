@@ -10,6 +10,7 @@
 | [ai-mvp-orchestrator](https://github.com/hyeongdongE/ai-mvp-orchestrator/tree/003c3470c28874de2a1dd13d694001e643fc29e4) | `003c3470c28874de2a1dd13d694001e643fc29e4` |
 | [ai-app-template](https://github.com/hyeongdongE/ai-app-template/tree/674e27e013222568c0a9891c74771363d887bf6b) | `674e27e013222568c0a9891c74771363d887bf6b` |
 | [peakrew](https://github.com/hyeongdongE/peakrew/tree/35be5688bc5af68b8c5b1eb035184653542bdff7) | `35be5688bc5af68b8c5b1eb035184653542bdff7` |
+| [mzapp (SoloPilot)](https://github.com/hyeongdongE/mzapp/tree/ebacc3f89784251e31f6c27876b6dd708da4fd5b) | `ebacc3f89784251e31f6c27876b6dd708da4fd5b` |
 
 ## Claim Boundaries
 
@@ -17,7 +18,9 @@
 - Orchestrator: README보다 최신 Runner의 frontend-only 종료 동작을 우선했습니다. 전체 배포 자동화 완료로 소개하지 않습니다.
 - Peakrew: 공통 모델·해시·증분 상태·발행 게이트 구현과 공개 테스트를 확인했습니다. 기관 간 의미적 중복 제거·실서비스 정확도와 구분합니다.
 - Orchestrator·Template·Peakrew는 공개 contributors에서 계정 기여를 확인했습니다. 기능별 단독 담당 범위는 추가 확인이 필요합니다.
-- Supervisor의 세부 역할, Voruvi 관계, 기업연계 기간·역할, AIoT 세부 구현, SSAFY 기간, 수상명·등급, FLY ASIA 전시명·연도는 확인하지 못했습니다.
+- Voruvi는 AI Supervisor의 새 이름입니다(사용자 확인). 코드 근거는 공개 배포본 `0.1.0b1`에 한정하며, 개발 중인 Voruvi 앱의 코드는 검토하지 않았습니다.
+- SoloPilot: 평가 수치는 저장소 기록(2026-09-23, 기준 커밋 `a229c14`)을 인용했으며 다시 실행하지 않았습니다. 실제 LLM은 비활성이고 사용자 공개 전입니다.
+- Supervisor의 세부 역할, 기업연계 기간·역할, AIoT 세부 구현, SSAFY 기간, 수상명·등급, FLY ASIA 전시명·연도는 확인하지 못했습니다.
 - Smart Fish Tank 팀장과 기업연계 경험은 사용자 제공 정보로 명시했습니다. 정식 회사 재직으로 표현하지 않습니다.
 - SQL은 Peakrew SQLite 상태 저장 SQL, TypeScript는 Peakrew·Template 프론트, Java/Spring/MySQL/Docker는 빌드·코드·구성 파일에서 확인했습니다. MQTT는 근거가 없어 기술 목록에서 제외했습니다.
 
@@ -47,3 +50,18 @@
 - Hero를 720 × 440에서 720 × 180으로 줄이고, 이름과 분야·작은 흐름 모티브로 재설계했습니다.
 - GitHub Markdown API 렌더링, 내부 파일 링크, 두 SVG의 XML·외부 리소스 부재와 `git diff --check`를 확인했습니다.
 - 로컬 Chromium에서 390px·1440px × light·dark 네 화면을 직접 확인했습니다. Hero 이미지 로드·테마 전환·가로 넘침 검사 통과.
+
+## AX Proof Revision
+
+2026-11-04, 프로필을 AX 역량 증명 구조로 개편했습니다.
+
+| 프로필 표시 | 확인 방법 |
+| --- | --- |
+| Voruvi 5단계 | wheel SHA-256 일치 확인 후 `registry/verify.py`의 `static`, `isolation`, `permission`, `capability`, `capability_proof`를 코드에서 확인 |
+| SoloPilot 0 / 14 | [품질 평가 기록](https://github.com/hyeongdongE/mzapp/blob/ebacc3f89784251e31f6c27876b6dd708da4fd5b/docs/it-intelligence/quality-evaluation.md)의 기록 데이터 E2E 수치 인용. 이번에 다시 실행하지 않음 |
+| Orchestrator 사람 승인 | `OrchestrationRunner`의 승인 생성과 Discord 요청, 승인 후 종료 경계를 코드에서 확인 |
+| Peakrew 25개 통과 | Python 3.12 격리 환경에서 `crawler/tests` 직접 실행, 25 passed. API 키와 실시간 호출 없음 |
+| Peakrew 공공 데이터 8종 | `crawler/opportunity_crawler/adapters`의 어댑터 8개. 같은 기관의 API가 포함되어 있어 기관 수가 아님 |
+
+- 사용 기술은 각 저장소의 빌드 파일, `package.json`, Compose 파일, 워크플로에서 확인한 항목만 적었습니다.
+- 비공개 저장소의 이름과 내용은 프로필에 쓰지 않았습니다.

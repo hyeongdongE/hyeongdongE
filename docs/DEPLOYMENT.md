@@ -15,7 +15,7 @@ git switch main
 git pull --ff-only
 git switch -c profile/update-description
 # README, assets, docs 수정 후 검증
-git add README.md assets docs
+git add README.md assets docs scripts
 git diff --cached --check
 git commit -m "Update AX profile"
 git push -u origin profile/update-description
@@ -28,6 +28,6 @@ gh pr create --base main --head profile/update-description --title "Update AX pr
 
 - 프로필 README 표시, 이미지·내부 링크·사례 문서의 Mermaid를 확인합니다.
 - GitHub Appearance의 light/dark 및 390px·1440px에서 Hero와 줄바꿈을 확인합니다.
-- Customize your pins에서 Supervisor, Orchestrator, Peakrew, Template 순서로 고정합니다.
+- Customize your pins에서 ai-supervisor, mzapp, ai-mvp-orchestrator, peakrew 순서로 고정합니다.
 
 추가 확인이 필요한 사실은 EVIDENCE.md와 프로젝트별 문서에 있습니다. 미확인 수치·상세 역할·수상 성과는 근거를 확보한 뒤 반영합니다.
