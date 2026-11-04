@@ -1,8 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.svg">
-  <img src="assets/banner-light.svg" width="100%" alt="HYEONGDONG">
-</picture>
+<img src="assets/banner.svg" width="100%" alt="HYEONGDONG">
 
 ## 이형동 <sub>AX Engineer</sub>
 
