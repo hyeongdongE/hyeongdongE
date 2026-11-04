@@ -11,16 +11,16 @@ AI가 낸 결과는 그대로 믿지 않고, 테스트와 코드로 확인하는
 ## Projects
 
 **[Voruvi](https://www.voruvi.com)** &nbsp; `Python` `Codex` `Claude Code`<br>
-Codex와 Claude Code를 한 팀으로 실행하는 Windows 앱
+개발 요청을 AI 에이전트 팀에 맡기고 결과까지 검사하는 Windows 앱
 
-**[SoloPilot](https://github.com/hyeongdongE/mzapp)** &nbsp; `FastAPI` `PostgreSQL` `React`<br>
-매일 IT 소식을 모아 5분 안에 읽는 브리핑으로 만드는 서비스
+**Agent Harness** &nbsp; `Python` `Claude Code` `SQLite`<br>
+AI 에이전트의 권한, 승인, 검증 단계를 코드로 통제하는 실행 환경
 
 **[AI MVP Orchestrator](https://github.com/hyeongdongE/ai-mvp-orchestrator)** &nbsp; `Spring Boot` `MySQL` `Docker`<br>
-아이디어를 넣으면 기획, 프론트 구현, 화면 승인까지 이어지는 파이프라인
+아이디어에서 기획, 프론트 구현, 화면 승인까지 잇는 제품 제작 파이프라인
 
-**[Peakrew](https://github.com/hyeongdongE/peakrew)** &nbsp; `Spring Boot` `Redis` `React Native`<br>
-대학생 활동 탐색과 크루 운영 플랫폼
+**[SoloPilot](https://github.com/hyeongdongE/mzapp)** &nbsp; `FastAPI` `PostgreSQL` `React`<br>
+IT 소식 수집과 정리를 5분 브리핑으로 자동화하는 서비스
 
 ## Stack
 
